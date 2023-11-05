@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- bootstrap link -->
+		<link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+		<!-- font awosome link -->
+		<link rel="stylesheet" href="./CSS/all.min.css" />
+		<!-- css custome file -->
+		<link rel="stylesheet" href="./CSS/index.css" />
+		<link
+			rel="shortcut icon"
+			href="./Images/Vantaartlogo.png"
+			type="image/x-icon"
+		/>
+		<title>Vantaart</title>
+	</head>
+	<body>
+		<!-- header nav-bar -->
+		<header class="header">
+			<div class="header__logo">
+				<a href="./index.html">
+					<img src="./Images/Vantaartlogo.png" alt="logo of web site" />
+				</a>
+			</div>
+
+			<nav class="header__nav">
+				<ul class="nav__lists">
+					<li class="nav__lists__item">
+						<a href="#">Artistes</a>
+					</li>
+					<li class="nav__lists__item">
+						<a href="#">Œuvres</a>
+					</li>
+					<li class="nav__lists__item">
+						<a href="#">Expositions</a>
+					</li>
+					<li class="nav__lists__item">
+						<a href="#">Visites Virtuelles</a>
+					</li>
+					<li class="nav__lists__item">
+						<a href="#">Blog</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="header__end">
+				<form action="" class="header__form">
+					<div class="form__search">
+						<input type="search" class="input__search" placeholder="Search" />
+						<span class="icon">
+							<svg
+								fill="none"
+								stroke="currentColor"
+								stroke-width="1.5"
+								viewBox="0 0 24 24"
+								xmlns="http://www.w3.org/2000/svg"
+								aria-hidden="true"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+								></path>
+							</svg>
+						</span>
+					</div>
+				</form>
+
+				<div class="header__end__language">
+					<button class="btn__language">
+						<div class="language__choise">
+							<img
+								src="./Images/france.png"
+								alt=""
+								class="french"
+								title="french"
+							/>
+							<img
+								src="./Images/united-kingdom.png"
+								alt=""
+								class="inglish"
+								title="inglish"
+							/>
+						</div>
+						<span class="icon">
+							<svg
+								fill="none"
+								stroke="currentColor"
+								stroke-width="1.5"
+								viewBox="0 0 24 24"
+								xmlns="http://www.w3.org/2000/svg"
+								aria-hidden="true"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M4.5 15.75l7.5-7.5 7.5 7.5"
+								></path>
+							</svg>
+						</span>
+					</button>
+					<div class="language__toltips">
+						<button class="anglais">Anglais</button>
+						<button class="francais">Francais</button>
+					</div>
+				</div>
+				<a href="#" class="connection">Se connecter</a>
+				<button class="header__end__card">
+					<span class="icon">
+						<svg
+							fill="none"
+							stroke="currentColor"
+							stroke-width="1.5"
+							viewBox="0 0 24 24"
+							xmlns="http://www.w3.org/2000/svg"
+							aria-hidden="true"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+							></path>
+						</svg>
+					</span>
+				</button>
+			</div>
+		</header>
+		<!-- end header nav-bar -->
+        <!-- main -->
+		<main class="main-container">
+
+            <!-- section hero -->
+			<section class="section__hero">
+				<div class="hero__left">
+					<h1 class="left__title">
+						Exposer, Promouvoir et vendre les œuvres d’art contemporain
+						d’Afrique et du monde
+					</h1>
+					<p class="left__text">
+						Vantaart est une galerie d’art virtuelle dédiée à l’art contemporain
+						Africain. Découvrez, créez et explorez des expositions d’art
+						virtuelles. Achetez et vendez des œuvres d’art en toute sécurité.
+					</p>
+                    <div class="left__btn">
+                        <button class="btn btn-primary px-4 py-2 btn-left-hero">Rejoignez-nous!</button>
+                    </div>
+				</div>
+				<div class="hero__rihgt mt-5 d-ms-none">
+                    <div class="row">
+                        <div class="col-lg-5 mt-4 hero__rihgt__img">
+                            <img src="./Images/img__hero.jpg" class="w-100" alt="img__hero">
+                        </div>
+                        <div class="col-lg-7">
+                            <img src="./Images/hero_img.jpg" class="w-100" alt="art-img">
+                        </div>
+                    </div>
+                </div>
+			</section>
+            <!-- section en hero -->
+
+            <!-- section exposition -->
+            <section class="exposition">
+                <div class="exposition__title d-flex align-items-center justify-content-between">
+                    <h2>Expositions à la une</h2>
+                    <a href="#">Voir plus</a>
+                </div>
+
+                <div class="expostion__sliders position-relative">
+                    <div class=" container__cards row gap-3">
+                        <div class="card col-lg-3">
+                            <figure class="w-100 position-relative mt-2">
+                                <img src="./Images/Revificiation.jpg" class="img-fluid rounded-3" alt="Revificiation">
+                                <figcaption class="position-absolute top-0 d-flex align-items-center justify-content-between w-100 px-2 mt-2">
+                                    <span class="status bg-danger text-light  rounded-pill py-1 px-2 fs-6">
+                                        Termine
+                                    </span>
+                                    <span class="icon">
+                                        <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"></path>
+                                        </svg>
+                                    </span>
+                                </figcaption>
+                            </figure>
+                            <div class="card-body p-0">
+                                <p class="display-6 h6 fs-6 fw-light">The Forest Creative Loft</p>
+                                <h3 class="display-6 h6 fs-5 fw-semibold ">Revivication</h3>
+                                <div class="container__dates">
+                                    <div class="date d-flex gap-1 mb-2">
+                                        <span class="icon">
+                                            <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="date__effectuer">
+                                            08 Jun 2023 - 25 Sep 2023
+                                        </span>
+                                    </div>
+                                    <div class="localisation d-flex gap-1">
+                                        <span class="icon">
+                                            <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="ville">
+                                            Douala - Cameroun
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card col-lg-3">
+                            <figure class="w-100 position-relative mt-2">
+                                <img src="./Images/img_3.jpg" class="img-fluid rounded-3" alt="Revificiation">
+                                <figcaption class="position-absolute top-0 d-flex align-items-center justify-content-between w-100 px-2 mt-2">
+                                    <span class="status bg-danger text-light  rounded-pill py-1 px-2 fs-6">
+                                        Termine
+                                    </span>
+                                    <span class="icon">
+                                        <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"></path>
+                                        </svg>
+                                    </span>
+                                </figcaption>
+                            </figure>
+                            <div class="card-body p-0">
+                                <p class="display-6 h6 fs-6 fw-light">Institut Francaise de Douala</p>
+                                <h3 class="display-6 h6 fs-5 fw-semibold ">Silence</h3>
+                                <div class="container__dates">
+                                    <div class="date d-flex gap-1 mb-2">
+                                        <span class="icon">
+                                            <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="date__effectuer">
+                                            08 Jun 2023 - 25 Sep 2023
+                                        </span>
+                                    </div>
+                                    <div class="localisation d-flex gap-1">
+                                        <span class="icon">
+                                            <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="ville">
+                                            Douala - Cameroun
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card col-lg-3">
+                            <figure class="w-100 position-relative mt-2">
+                                <img src="./Images/img4.jpg" class="img-fluid rounded-3" alt="Revificiation">
+                                <figcaption class="position-absolute top-0 d-flex align-items-center justify-content-between w-100 px-2 mt-2">
+                                    <span class="status bg-danger text-light  rounded-pill py-1 px-2 fs-6">
+                                        Termine
+                                    </span>
+                                    <span class="icon">
+                                        <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"></path>
+                                        </svg>
+                                    </span>
+                                </figcaption>
+                            </figure>
+                            <div class="card-body p-0">
+                                <p class="display-6 h6 fs-6 fw-light">Doual'art</p>
+                                <h3 class="display-6 h6 fs-5 fw-semibold ">Water No GetEnemy</h3>
+                                <div class="container__dates">
+                                    <div class="date d-flex gap-1 mb-2">
+                                        <span class="icon">
+                                            <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="date__effectuer">
+                                            08 Jun 2023 - 25 Sep 2023
+                                        </span>
+                                    </div>
+                                    <div class="localisation d-flex gap-1">
+                                        <span class="icon">
+                                            <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="ville">
+                                            Douala - Cameroun
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card col-lg-3">
+                            <figure class="w-100 position-relative mt-2">
+                                <img src="./Images/img_1.jpg" class="img-fluid rounded-3" alt="Revificiation">
+                                <figcaption class="position-absolute top-0 d-flex align-items-center justify-content-between w-100 px-2 mt-2">
+                                    <span class="status bg-danger text-light  rounded-pill py-1 px-2 fs-6">
+                                        Termine
+                                    </span>
+                                    <span class="icon">
+                                        <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"></path>
+                                        </svg>
+                                    </span>
+                                </figcaption>
+                            </figure>
+                            <div class="card-body p-0">
+                                <p class="display-6 h6 fs-6 fw-light">Bow Art Galery</p>
+                                <h3 class="display-6 h6 fs-5 fw-semibold ">Les Defiant.e.s</h3>
+                                <div class="container__dates">
+                                    <div class="date d-flex gap-1 mb-2">
+                                        <span class="icon">
+                                            <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="date__effectuer">
+                                            08 Jun 2023 - 25 Sep 2023
+                                        </span>
+                                    </div>
+                                    <div class="localisation d-flex gap-1">
+                                        <span class="icon">
+                                            <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="ville">
+                                            Douala - Cameroun
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card col-lg-3">
+                            <figure class="w-100 position-relative mt-2">
+                                <img src="./Images/img_2.jpeg" class="img-fluid rounded-3" alt="Revificiation">
+                                <figcaption class="position-absolute top-0 d-flex align-items-center justify-content-between w-100 px-2 mt-2">
+                                    <span class="status bg-danger text-light  rounded-pill py-1 px-2 fs-6">
+                                        Termine
+                                    </span>
+                                    <span class="icon">
+                                        <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"></path>
+                                        </svg>
+                                    </span>
+                                </figcaption>
+                            </figure>
+                            <div class="card-body p-0">
+                                <p class="display-6 h6 fs-6 fw-light">SOLID 'ART</p>
+                                <h3 class="display-6 h6 fs-5 fw-semibold ">Revivication</h3>
+                                <div class="container__dates">
+                                    <div class="date d-flex gap-1 mb-2">
+                                        <span class="icon">
+                                            <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="date__effectuer">
+                                            08 Jun 2023 - 25 Sep 2023
+                                        </span>
+                                    </div>
+                                    <div class="localisation d-flex gap-1">
+                                        <span class="icon">
+                                            <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="ville">
+                                            Douala - Cameroun
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="next__btn">
+                     <
+                  </button>
+                  <button class="prev__btn">
+                     >
+                      </button>
+                </div>
+            </section>
+            <!-- end exposition -->
+		</main>
+        <!-- end main -->
+
+		<!-- js for bootstrap -->
+		<script src="./js/bootstrap.min.js"></script>
+		<!-- js for font awesoe icons -->
+		<script src="./JS/all.min.js"></script>
+		<!-- js file  -->
+		<script src="./JS/index.js"></script>
+	</body>
+</html>
