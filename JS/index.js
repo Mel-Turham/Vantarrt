@@ -66,5 +66,22 @@ document.querySelector('.prev__btn').addEventListener('click', () => {
 const buttonToogle = document.querySelector('.toogle');
 const nav = document.querySelector('.header .header__nav');
 buttonToogle.addEventListener('click', () => {
-	nav.classList.toggle('active')
+	nav.classList.toggle('active');
 });
+
+const barreDeRecherche = document.querySelector('.form__search');
+
+window.addEventListener('scroll', () => {
+	const scrollY = window.scrollY;
+	if (scrollY > 36) {
+		barreDeRecherche.style.display = 'none';
+	} else {
+		barreDeRecherche.style.display = 'block';
+
+	}
+
+	if (window.innerWidth > 768) {
+		barreDeRecherche.style.display = "block";
+	  }
+});
+
