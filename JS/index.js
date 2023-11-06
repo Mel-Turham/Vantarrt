@@ -46,7 +46,6 @@ function changeSlide(slideIndex) {
 		left: currentSlide * sliders.clientWidth,
 		behavior: 'smooth',
 	});
-
 }
 
 document.querySelector('.next__btn').addEventListener('click', () => {
