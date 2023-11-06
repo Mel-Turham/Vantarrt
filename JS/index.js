@@ -49,8 +49,22 @@ function changeSlide(slideIndex) {
 }
 
 document.querySelector('.next__btn').addEventListener('click', () => {
-	changeSlide(currentSlide + 1);
+	changeSlide(currentSlide + 1.1);
 });
 document.querySelector('.prev__btn').addEventListener('click', () => {
-	changeSlide(currentSlide - 1);
+	changeSlide(currentSlide - 1.1);
+});
+
+// btn toggle
+
+// var btn = $('.btn');
+
+// btn.on('click', function() {
+//   $(this).toggleClass('active not-active');
+// });
+
+const buttonToogle = document.querySelector('.toogle');
+const nav = document.querySelector('.header .header__nav');
+buttonToogle.addEventListener('click', () => {
+	nav.classList.toggle('active')
 });
