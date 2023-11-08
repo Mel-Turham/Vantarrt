@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<!-- meta tags -->
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Exposer, Promouvoir et vendre les œuvres d’art contemporain d’Afrique et du monde">
 
 		<!-- bootstrap link -->
 		<link rel="stylesheet" href="./CSS/bootstrap.min.css" />
@@ -18,6 +20,9 @@
 		<title>Vantaart</title>
 	</head>
 	<body>
+		<div class="loader">
+			<div class="spiner"></div>
+		</div>
 		<!-- header nav-bar -->
 		<header class="header">
 			<div class="header__logo">
@@ -69,7 +74,7 @@
 				</form>
 
 				<div class="header__end__language">
-					<button class="btn__language">
+					<button class="btn__language " aria-label="Button pour choisir la langue" title="Language">
 						<div class="language__choise">
 							<img
 								src="./Images/france.png"
@@ -102,13 +107,13 @@
 						</span>
 					</button>
 					<div class="language__toltips">
-						<button class="anglais">Anglais</button>
-						<button class="francais">Francais</button>
+						<button class="anglais" aria-label="Choix Anglais" title="Anglais">Anglais</button>
+						<button class="francais" aria-label="Choix Francais" title="Fancais">Francais</button>
 					</div>
 				</div>
 
-				<a href="#" class="connection">Se connecter</a>
-				<a href="#" class="icon__user">
+				<a href="./login.html" class="connection" title="Connexion">Se connecter</a>
+				<a href="./login.html" class="icon__user " title="Connextion">
 					<span class="icon">
 						<svg
 							fill="none"
@@ -127,7 +132,7 @@
 					</span>
 				</a>
 
-				<button class="header__end__card">
+				<button class="header__end__card" title="Card" aria-label="card Shopping">
 					<span class="icon">
 						<svg
 							fill="none"
@@ -210,7 +215,7 @@
 									class="position-absolute top-0 d-flex align-items-center justify-content-between w-100 px-2 mt-2"
 								>
 									<span
-										class="status bg-danger text-light rounded-pill py-1 px-2 fs-6"
+										class="status rounded-pill py-1 px-2 fs-6"
 									>
 										Termine
 									</span>
@@ -297,7 +302,7 @@
 									class="position-absolute top-0 d-flex align-items-center justify-content-between w-100 px-2 mt-2"
 								>
 									<span
-										class="status bg-danger text-light rounded-pill py-1 px-2 fs-6"
+										class="status rounded-pill py-1 px-2 fs-6"
 									>
 										Termine
 									</span>
@@ -384,7 +389,7 @@
 									class="position-absolute top-0 d-flex align-items-center justify-content-between w-100 px-2 mt-2"
 								>
 									<span
-										class="status bg-danger text-light rounded-pill py-1 px-2 fs-6"
+										class="status  rounded-pill py-1 px-2 fs-6"
 									>
 										Termine
 									</span>
@@ -469,7 +474,7 @@
 									class="position-absolute top-0 d-flex align-items-center justify-content-between w-100 px-2 mt-2"
 								>
 									<span
-										class="status bg-danger text-light rounded-pill py-1 px-2 fs-6"
+										class="status rounded-pill py-1 px-2 fs-6"
 									>
 										Termine
 									</span>
@@ -1033,19 +1038,23 @@
 					<div class="infoService">
 						<h3>Informations</h3>
 						<div class="info__items">
-							<li><a href="">A propos de nous</a></li>
-							<li><a href="">FAQ</a></li>
-							<li><a href="">Blog</a></li>
-							<li><a href="">Nous contacter</a></li>
+							<menu>
+								<li><a href="">A propos de nous</a></li>
+								<li><a href="">FAQ</a></li>
+								<li><a href="">Blog</a></li>
+								<li><a href="">Nous contacter</a></li>
+							</menu>
 						</div>
 					</div>
 					<div class="infoService">
 						<h3>Services</h3>
 						<div class="info__items">
-							<li><a href="">Exposition 3D</a></li>
-							<li><a href="">Visites virtuelles</a></li>
-							<li><a href="">Boutique</a></li>
-							<li><a href="">Agenda</a></li>
+							<menu>
+								<li><a href="">Exposition 3D</a></li>
+								<li><a href="">Visites virtuelles</a></li>
+								<li><a href="">Boutique</a></li>
+								<li><a href="">Agenda</a></li>
+							</menu>
 						</div>
 					</div>
 				</div>
@@ -1073,7 +1082,7 @@
 						 minlength="8"
 						 autocomplete="off"
 						 required>
-						<button type="submit">Souscrire</button>
+						<button type="submit" aria-label="Souscrire">Souscrire</button>
 					</form>
 				</div>
 				<div class="right__socials">
@@ -1113,13 +1122,13 @@
 		<!-- copyright -->
 
 		<div class="copyright">
-			<span class="copy">&copy; Copyright <a href="index.html">Vantaart</a></span>
+			<span class="copy" aria-label="Copyright">&copy; Copyright <a href="index.html" title="Vantaart">Vantaart</a></span>
 			<span class="conditions">
-				<a href="#">Conditions générales de vente</a>
+				<a href="#" title="Conditions">Conditions générales de vente</a>
 				
-				<a href="#">Mentions légales</a>
+				<a href="#" title="Mentions legale">Mentions légales</a>
 				
-				<a href="#">Politique de confidentialité et cookies</a>
+				<a href="#"  title="Politique">Politique de confidentialité et cookies</a>
 			</span>
 		</div>
 
