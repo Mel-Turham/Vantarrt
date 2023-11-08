@@ -1,3 +1,9 @@
+window.addEventListener('load', () => {
+	const loader = document.querySelector('.loader');
+	loader.addEventListener('animationend', () => {
+		loader.classList.add('active');
+	});
+});
 const images = document.querySelectorAll('img');
 
 images.forEach((image) => {
@@ -77,11 +83,9 @@ window.addEventListener('scroll', () => {
 		barreDeRecherche.style.display = 'none';
 	} else {
 		barreDeRecherche.style.display = 'block';
-
 	}
 
 	if (window.innerWidth > 768) {
-		barreDeRecherche.style.display = "block";
-	  }
+		barreDeRecherche.style.display = 'block';
+	}
 });
-
