@@ -1,9 +1,11 @@
-window.addEventListener('load', () => {
-	const loader = document.querySelector('.loader');
-	loader.addEventListener('animationend', () => {
-		loader.classList.add('active');
-	});
+window.addEventListener('DOMContentLoaded', ()=>{
+ const laoder = document.querySelector('.loader');
+
+
+ laoder.classList.add('active');
 });
+
+
 const images = document.querySelectorAll('img');
 
 images.forEach((image) => {
@@ -61,13 +63,7 @@ document.querySelector('.prev__btn').addEventListener('click', () => {
 	changeSlide(currentSlide - 1.1);
 });
 
-// btn toggle
 
-// var btn = $('.btn');
-
-// btn.on('click', function() {
-//   $(this).toggleClass('active not-active');
-// });
 
 const buttonToogle = document.querySelector('.toogle');
 const nav = document.querySelector('.header .header__nav');
